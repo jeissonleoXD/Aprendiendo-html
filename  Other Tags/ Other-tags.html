@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Otras Etiquetas Útiles en HTML</title>
+  </head>
+  <body>
+    <h1>Otras Etiquetas Útiles en HTML</h1>
+
+    <!-- DETALLES DESPLEGABLES -->
+    <h2>Elemento &lt;details&gt; y &lt;summary&gt;</h2>
+    <details>
+      <summary>Haz clic para ver más información</summary>
+      <p>Este es el contenido oculto que se muestra al hacer clic.</p>
+    </details>
+
+    <!-- MARCAR TEXTO DESTACADO -->
+    <h2>Elemento &lt;mark&gt;</h2>
+    <p>
+      Este es un texto con una palabra <mark>resaltada</mark> para llamar la
+      atención.
+    </p>
+
+    <!-- MOSTRAR CÓDIGO -->
+    <h2>Elementos &lt;code&gt; y &lt;pre&gt;</h2>
+    <pre>
+    <code>
+function saludar() {
+  console.log('¡Hola mundo!');
+}
+    </code>
+  </pre>
+
+    <!-- CITA EN BLOQUE -->
+    <h2>Elemento &lt;blockquote&gt;</h2>
+    <blockquote>
+      <p>La imaginación es más importante que el conocimiento.</p>
+      <cite>- Albert Einstein</cite>
+    </blockquote>
+
+    <!-- ABREVIATURAS -->
+    <h2>Elemento &lt;abbr&gt;</h2>
+    <p>
+      El lenguaje <abbr title="Lenguaje de Marcado de Hipertexto">HTML</abbr> es
+      la base de la web.
+    </p>
+
+    <!-- BARRA DE PROGRESO -->
+    <h2>Elemento &lt;progress&gt;</h2>
+    <label for="progreso">Progreso de descarga:</label>
+    <progress id="progreso" value="60" max="100">60%</progress>
+
+    <!-- INDICADOR DE MEDIDA -->
+    <h2>Elemento &lt;meter&gt;</h2>
+    <label for="temperatura">Temperatura:</label>
+    <meter id="temperatura" value="0.7" min="0" max="1">70%</meter>
+
+    <!-- FECHAS Y HORAS -->
+    <h2>Elemento &lt;time&gt;</h2>
+    <p>Publicado el <time datetime="2025-04-05">5 de abril de 2025</time></p>
+
+    <!-- ENTRADAS DE TECLADO -->
+    <h2>Elemento &lt;kbd&gt;</h2>
+    <p>Presiona <kbd>Ctrl</kbd> + <kbd>C</kbd> para copiar.</p>
+
+    <!-- SALIDA DEL SISTEMA -->
+    <h2>Elemento &lt;samp&gt;</h2>
+    <p>Salida del sistema: <samp>Error 404: No encontrado</samp></p>
+
+    <!-- VARIABLES -->
+    <h2>Elemento &lt;var&gt;</h2>
+    <p>La fórmula es: <var>x</var> + <var>y</var> = <var>z</var></p>
+
+    <!-- DEFINICIONES -->
+    <h2>Elemento &lt;dfn&gt;</h2>
+    <p>
+      <dfn>API</dfn> es la interfaz que permite la comunicación entre programas.
+    </p>
+
+    <!-- DIRECCIÓN INDEPENDIENTE -->
+    <h2>Elemento &lt;bdi&gt;</h2>
+    <p>Usuario: <bdi>مستخدم</bdi></p>
+
+    <!-- CAMBIO DE DIRECCIÓN -->
+    <h2>Elemento &lt;bdo&gt;</h2>
+    <p><bdo dir="rtl">Este texto se lee de derecha a izquierda.</bdo></p>
+
+    <!-- PUNTO DE CORTE DE LÍNEA -->
+    <h2>Elemento &lt;wbr&gt;</h2>
+    <p>PalabraLarguísima<wbr />QuePuede<wbr />Romperse</p>
+
+    <!-- TEXTO INSERTADO Y ELIMINADO -->
+    <h2>Elementos &lt;ins&gt; y &lt;del&gt;</h2>
+    <p>Texto original: <del>Este texto fue eliminado</del></p>
+    <p>Texto añadido: <ins>Este texto fue insertado</ins></p>
+
+    <!-- TEXTO PEQUEÑO -->
+    <h2>Elemento &lt;small&gt;</h2>
+    <p>Este es un texto <small>más pequeño</small> que el resto.</p>
+
+    <!-- SUPERÍNDICE Y SUBÍNDICE -->
+    <h2>Elementos &lt;sup&gt; y &lt;sub&gt;</h2>
+    <p>H<sub>2</sub>O es la fórmula del agua. x<sup>2</sup> es una potencia.</p>
+
+    <!-- PLANTILLA OCULTA -->
+    <h2>Elemento &lt;template&gt;</h2>
+    <template>
+      <p>
+        Este contenido está dentro de una plantilla y no se muestra
+        automáticamente.
+      </p>
+    </template>
+
+    <!-- SIN JAVASCRIPT -->
+    <h2>Elemento &lt;noscript&gt;</h2>
+    <noscript>
+      <p>Tu navegador no soporta JavaScript o está deshabilitado.</p>
+    </noscript>
+
+    <!-- CONJUNTO DE CAMPOS -->
+    <h2>Elementos &lt;fieldset&gt; y &lt;legend&gt;</h2>
+    <fieldset>
+      <legend>Información personal</legend>
+      <label>Nombre: <input type="text" /></label>
+    </fieldset>
+
+    <!-- RESULTADO DE OPERACIÓN -->
+    <h2>Elemento &lt;output&gt;</h2>
+    <form oninput="resultado.value=parseInt(a.value)+parseInt(b.value)">
+      <input type="number" id="a" value="5" /> +
+      <input type="number" id="b" value="10" /> =
+      <output name="resultado"></output>
+    </form>
+
+    <!-- DIRECCIÓN -->
+    <h2>Elemento &lt;address&gt;</h2>
+    <address>
+      Escrito por Juan Pérez. <br />
+      Visítanos en: Av. Siempre Viva 123, Ciudad Web.
+    </address>
+
+    <!-- FIGURA Y LEYENDA -->
+    <h2>Elementos &lt;figure&gt; y &lt;figcaption&gt;</h2>
+    <figure>
+      <img src="https://via.placeholder.com/150" alt="Ejemplo" />
+      <figcaption>Imagen de ejemplo</figcaption>
+    </figure>
+
+    <!-- NAVEGACIÓN Y CONTENIDO PRINCIPAL -->
+    <h2>Elementos &lt;nav&gt; y &lt;main&gt;</h2>
+    <nav>
+      <a href="#">Inicio</a> | <a href="#">Servicios</a> |
+      <a href="#">Contacto</a>
+    </nav>
+    <main>
+      <p>Este es el contenido principal de la página.</p>
+    </main>
+
+    <!-- OBJETO Y EMBED -->
+    <h2>Elementos &lt;object&gt; y &lt;embed&gt;</h2>
+    <object data="archivo.pdf" type="application/pdf" width="300" height="200">
+      <p>No se pudo mostrar el objeto.</p>
+    </object>
+    <embed
+      src="https://www.w3schools.com/html/mov_bbb.mp4"
+      width="300"
+      height="200"
+    />
+  </body>
+</html>

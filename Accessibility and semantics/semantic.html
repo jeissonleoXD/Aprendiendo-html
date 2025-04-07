@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Accesibilidad y Semántica</title>
+</head>
+<body>
+
+  <!-- ENCABEZADO PRINCIPAL DEL SITIO -->
+  <header role="banner">
+    <h1>Mi Sitio Web Accesible</h1>
+    <p>Un ejemplo de estructura semántica en HTML</p>
+  </header>
+
+  <!-- NAVEGACIÓN PRINCIPAL -->
+  <nav role="navigation" aria-label="Menú principal">
+    <ul>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#articulos">Artículos</a></li>
+      <li><a href="#formulario">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main id="inicio" role="main">
+
+    <!-- SECCIÓN CON ARTÍCULOS -->
+    <section id="articulos" aria-labelledby="titulo-articulos">
+      <h2 id="titulo-articulos">Últimos artículos</h2>
+
+      <article aria-labelledby="articulo-1">
+        <h3 id="articulo-1">¿Qué es HTML semántico?</h3>
+        <p>HTML semántico usa etiquetas con significado para estructurar contenido.</p>
+      </article>
+
+      <article aria-labelledby="articulo-2">
+        <h3 id="articulo-2">¿Por qué es importante la accesibilidad?</h3>
+        <p>Ayuda a que todos puedan acceder a la información, incluyendo personas con discapacidad.</p>
+      </article>
+    </section>
+
+    <!-- SECCIÓN LATERAL -->
+    <aside role="complementary" aria-label="Información adicional">
+      <h2>Información adicional</h2>
+      <p>Este sitio está hecho con HTML semántico para mejorar la accesibilidad.</p>
+    </aside>
+
+    <!-- FORMULARIO CON ACCESIBILIDAD -->
+    <section id="formulario" aria-labelledby="titulo-contacto">
+      <h2 id="titulo-contacto">Formulario de contacto</h2>
+
+      <form role="form">
+
+        <!-- Campo Nombre -->
+        <div>
+          <label for="nombre">Nombre:</label><br>
+          <input type="text" id="nombre" name="nombre" required aria-required="true">
+        </div>
+
+        <!-- Campo Email -->
+        <div>
+          <label for="email">Correo electrónico:</label><br>
+          <input type="email" id="email" name="email" required aria-required="true">
+        </div>
+
+        <!-- Campo Mensaje -->
+        <div>
+          <label for="mensaje">Mensaje:</label><br>
+          <textarea id="mensaje" name="mensaje" rows="5" cols="30" required aria-required="true"></textarea>
+        </div>
+
+        <!-- Botón -->
+        <div>
+          <button type="submit">Enviar</button>
+        </div>
+
+      </form>
+    </section>
+
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+  <footer role="contentinfo">
+    <p>&copy; 2025 - Sitio Web Accesible</p>
+  </footer>
+
+</body>
+</html>

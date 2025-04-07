@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contenido Multimedia</title>
+    <style>
+      .separador {
+        height: 2px;
+        background-color: #ccc;
+        margin: 2em 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Contenido Multimedia en HTML</h1>
+
+    <!-- ============================ -->
+    <!-- IMÁGENES -->
+    <!-- ============================ -->
+    <h2>Imágenes</h2>
+
+    <!-- Imagen desde una URL -->
+    <img
+      src="https://st.depositphotos.com/1016440/2534/i/450/depositphotos_25344733-stock-photo-sunrise-at-the-beach.jpg"
+      alt="imagen de web"
+      title="Imagen de una playa al amanecer"
+      width="400"
+    />
+
+    <!-- Imagen desde una carpeta local -->
+    <img
+      src="/Imagen/a/wallpaperflare.jpg"
+      alt="imagen en carpeta"
+      title="Imagen local"
+      width="400"
+    />
+
+    <div class="separador"></div>
+
+    <!-- ============================ -->
+    <!-- AUDIO -->
+    <!-- ============================ -->
+    <h2>Audio</h2>
+    <p>Ejemplo de audio con controles:</p>
+    <audio controls>
+      <source
+        src="https://www.w3schools.com/html/horse.mp3"
+        type="audio/mpeg"
+      />
+      Tu navegador no soporta el elemento de audio.
+    </audio>
+
+    <div class="separador"></div>
+
+    <!-- ============================ -->
+    <!-- VIDEO -->
+    <!-- ============================ -->
+    <h2>Video</h2>
+    <p>Ejemplo de video incrustado desde la web:</p>
+    <video width="320" height="240" controls>
+      <source
+        src="https://www.w3schools.com/html/mov_bbb.mp4"
+        type="video/mp4"
+      />
+      Tu navegador no soporta el elemento de video.
+    </video>
+
+    <div class="separador"></div>
+
+    <!-- ============================ -->
+    <!-- YOUTUBE -->
+    <!-- ============================ -->
+    <h2>Video de YouTube</h2>
+    <p>Video insertado desde YouTube:</p>
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+      title="Reproductor de YouTube"
+      frameborder="0"
+      allowfullscreen
+    >
+    </iframe>
+
+    <div class="separador"></div>
+
+    <!-- ============================ -->
+    <!-- MAPA DE GOOGLE -->
+    <!-- ============================ -->
+    <h2>Mapa de Google</h2>
+    <p>Ubicación incrustada usando iframe:</p>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.038602019934!2d-122.41941568468192!3d37.77492977975996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c50a28cfd%3A0xa6c5c65d8fc088a5!2sSan%20Francisco%2C%20CA!5e0!3m2!1ses!2sus!4v1616458000000!5m2!1ses!2sus"
+      width="600"
+      height="450"
+      style="border: 0"
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    >
+    </iframe>
+  </body>
+</html>
